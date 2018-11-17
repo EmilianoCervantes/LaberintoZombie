@@ -21,7 +21,7 @@ public class VideoController : MonoBehaviour
 	IEnumerator PlayVideo()
 	{
 		_videoPlayer.Prepare();
-		WaitForSeconds waitForSeconds = new WaitForSeconds(1);
+		WaitForSeconds waitForSeconds = new WaitForSeconds(0.3f);
 		while (!_videoPlayer.isPrepared)
 		{
 			yield return waitForSeconds;
